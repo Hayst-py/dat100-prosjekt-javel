@@ -1,7 +1,5 @@
 package no.hvl.dat100.javel.oppgave1;
 
-import no.hvl.dat100.javel.oppgave2.MonthlyPower;
-
 public class DayMain {
 
     public static void main(String[] args) {
@@ -16,13 +14,12 @@ public class DayMain {
         System.out.println("==============");
         System.out.println();
 
-        /*
-        TODO
+        System.out.println("a) Strømpriser");
+        DailyPower.printPowerPrices(powerprices_day);
+        System.out.println("");
 
-         Write code that tests the methods you implement in the DailyPower class
-         Remember to teste the methods as you implement them
-         Remember to also to check that you get the expected results
-         */
-
+        System.out.println("b) strømbruks");
+        DailyPower.printPowerUsage(powerusage_day);
+        System.out.println("");
     }
 }
