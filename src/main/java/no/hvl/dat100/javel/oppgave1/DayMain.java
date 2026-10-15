@@ -21,5 +21,9 @@ public class DayMain {
         System.out.println("b) strømbruks");
         DailyPower.printPowerUsage(powerusage_day);
         System.out.println("");
+
+        System.out.println("C) strømbruk for 1 dag");
+        DailyPower.computePowerUsage(powerusage_day);
+        System.out.println("");
     }
 }

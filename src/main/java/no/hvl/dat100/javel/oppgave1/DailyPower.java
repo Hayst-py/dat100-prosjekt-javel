@@ -18,11 +18,10 @@ public class DailyPower {
 
     // c) compute power usage for a single day
     public static double computePowerUsage(double[] usage) {
-
         double sum = 0;
-
-        // TODO
-
+        for (int i = 0; i < usage.length; i++) {
+            sum += usage[i];
+        }
         return sum;
     }
 
