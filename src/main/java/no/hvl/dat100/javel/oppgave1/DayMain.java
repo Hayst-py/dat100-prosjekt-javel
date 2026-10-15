@@ -23,7 +23,10 @@ public class DayMain {
         System.out.println("");
 
         System.out.println("C) strømbruk for 1 dag");
-        DailyPower.computePowerUsage(powerusage_day);
+        System.out.println(DailyPower.computePowerUsage(powerusage_day));
+
+        System.out.println("D) Spotprise");
+        System.out.println(DailyPower.computeSpotPrice(powerusage_day, powerprices_day));
         System.out.println("");
     }
 }

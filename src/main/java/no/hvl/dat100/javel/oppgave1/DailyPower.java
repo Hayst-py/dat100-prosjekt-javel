@@ -27,11 +27,10 @@ public class DailyPower {
 
     // d) compute spot price for a single day
     public static double computeSpotPrice(double[] usage, double[] prices) {
-
         double price = 0;
-
-        // TODO
-
+        for (int i = 0; i < usage.length; i++) {
+                price += usage[i] * prices[i];
+            }
         return price;
     }
 
