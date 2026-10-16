@@ -39,12 +39,7 @@ public class DailyPower {
     private static final double PERCENTAGE = 0.9;
 
     private static double getSupport(double usage, double price) {
-
-        double support = 0;
-
-        // TODO
-
-        return support;
+        return usage * Math.max(price - THRESHOLD, 0) * PERCENTAGE;
     }
 
     // f) compute power support for a single day
