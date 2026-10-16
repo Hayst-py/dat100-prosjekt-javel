@@ -44,9 +44,15 @@ public class MonthlyPower {
 
         boolean exceeded = false;
         double usage = 0;
+        int day = 0;
 
-        // TODO
-
+        while (day < powerusage.length && !exceeded) {
+            usage += DailyPower.computePowerUsage(powerusage[day]);
+            if (usage > threshold) {
+                exceeded = true;
+            }
+            day++;
+        }
         return exceeded;
     }
 

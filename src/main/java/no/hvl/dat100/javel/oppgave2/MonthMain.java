@@ -36,5 +36,9 @@ public class MonthMain {
         System.out.println("c:");
         System.out.println(MonthlyPower.computePowerUsage(power_usage_month));
         System.out.println("");
+
+        System.out.println("d:");
+        System.out.println(MonthlyPower.exceedThreshold(power_usage_month, 1000));
+        System.out.println("");
     }
 }
