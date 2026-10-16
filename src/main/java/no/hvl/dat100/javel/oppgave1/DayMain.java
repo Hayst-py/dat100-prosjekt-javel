@@ -40,5 +40,9 @@ public class DayMain {
         System.out.println("h) ");
         System.out.println(DailyPower.findPeakUsage(powerusage_day));
         System.out.println("");
+
+        System.out.println("i) ");
+        System.out.println(DailyPower.findAvgPower(powerusage_day));
+        System.out.println("");
     }
 }

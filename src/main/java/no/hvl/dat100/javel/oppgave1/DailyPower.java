@@ -77,11 +77,11 @@ public class DailyPower {
 
     //i) 
     public static double findAvgPower(double[] usage) {
-
         double average = 0;
-
-        // TODO
-
+        for(int i = 0;i < usage.length; i++) {
+            average += usage[i];
+        }
+        average = average/usage.length;
         return average;
     }
 }
