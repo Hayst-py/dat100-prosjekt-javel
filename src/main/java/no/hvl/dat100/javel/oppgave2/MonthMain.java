@@ -44,5 +44,9 @@ public class MonthMain {
         System.out.println("e:");
         System.out.println(MonthlyPower.computeSpotPrice(power_usage_month, power_prices_month));
         System.out.println();
+
+        System.out.println("f:");
+        System.out.println(MonthlyPower.computePowerSupport(power_usage_month, power_prices_month));
+        System.out.println();
     }
 }

@@ -71,8 +71,9 @@ public class MonthlyPower {
 
         double support = 0;
 
-        // TODO
-
+        for (int i = 0; i < usage.length; i++) {
+            support += DailyPower.computePowerSupport(usage[i], prices[i]);
+        }
         return support;
     }
 
