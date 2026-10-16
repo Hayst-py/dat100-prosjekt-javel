@@ -48,5 +48,9 @@ public class MonthMain {
         System.out.println("f:");
         System.out.println(MonthlyPower.computePowerSupport(power_usage_month, power_prices_month));
         System.out.println();
+
+        System.out.println("g:");
+        System.out.println(MonthlyPower.computeNorgesPrice(power_usage_month));
+        System.out.println();
     }
 }

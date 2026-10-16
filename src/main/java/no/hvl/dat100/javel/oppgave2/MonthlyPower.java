@@ -81,9 +81,10 @@ public class MonthlyPower {
     public static double computeNorgesPrice(double[][] usage) {
 
         double price = 0;
-
-        // TODO
-
+        
+        for (double[] day : usage) {
+            price += DailyPower.computeNorgesPrice(day);
+        }
         return price;
     }
 }
