@@ -32,7 +32,9 @@ public class MonthlyPower {
 
         double sum = 0;
 
-        // TODO
+        for (double[] d : usage) {
+            sum += DailyPower.computePowerUsage(d);
+        }
 
         return sum;
     }
