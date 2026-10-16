@@ -46,11 +46,10 @@ public class DailyPower {
 
     // f) compute power support for a single day
     public static double computePowerSupport(double[] usage, double[] prices) {
-
         double support = 0;
-
-        // TODO
-
+        for (int i = 0; i < usage.length; i++) {
+            support += getSupport(usage[i], prices[i]);
+        }
         return support;
     }
 
