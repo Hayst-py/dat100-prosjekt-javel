@@ -6,15 +6,24 @@ public class MonthlyPower {
 
     // a) print power usage for a month
     public static void print_PowerUsage(double[][] usage) {
-
-        // TODO
-
+        int day = 1;
+        for (double[] d : usage) {
+            System.out.print("Day " + day + ":");
+            DailyPower.printPowerUsage(d);
+            System.out.println();
+            day++;
+        }
     }
 
     // b) print power prices for a month
     public static void print_PowerPrices(double[][] prices) {
-
-        // TODO
+        int day = 1;
+        for (double[] d : prices) {
+            System.out.print("Day" + day + ":");
+            DailyPower.printPowerPrices(d);
+            System.out.println();
+            day++;
+        }
 
     }
 
