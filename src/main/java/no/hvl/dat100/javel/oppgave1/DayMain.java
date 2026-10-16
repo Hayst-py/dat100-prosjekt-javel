@@ -32,5 +32,9 @@ public class DayMain {
         System.out.println("F) powerSuport");
         System.out.println(DailyPower.computePowerSupport(powerusage_day, powerprices_day));
         System.out.println("");
+
+        System.out.println("g) norges pris");
+        System.out.println(DailyPower.computeNorgesPrice));
+        System.out.println("");
     }
 }
