@@ -28,5 +28,9 @@ public class DayMain {
         System.out.println("D) Spotprise");
         System.out.println(DailyPower.computeSpotPrice(powerusage_day, powerprices_day));
         System.out.println("");
+
+        System.out.println("F) powerSuport");
+        System.out.println(DailyPower.computePowerSupport(powerusage_day, powerprices_day));
+        System.out.println("");
     }
 }
