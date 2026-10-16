@@ -34,7 +34,7 @@ public class DayMain {
         System.out.println("");
 
         System.out.println("g) norges pris");
-        System.out.println(DailyPower.computeNorgesPrice));
+        System.out.println(DailyPower.computeNorgesPrice(powerusage_day));
         System.out.println("");
     }
 }
