@@ -60,9 +60,9 @@ public class MonthlyPower {
     public static double computeSpotPrice(double[][] usage, double[][] prices) {
 
         double price = 0;
-
-        // TODO
-
+        for (int i = 0; i < usage.length; i++) {
+            price += DailyPower.computeSpotPrice(usage[i], prices[i]);
+        }
         return price;
     }
 

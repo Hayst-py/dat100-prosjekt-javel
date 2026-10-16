@@ -40,5 +40,9 @@ public class MonthMain {
         System.out.println("d:");
         System.out.println(MonthlyPower.exceedThreshold(power_usage_month, 1000));
         System.out.println("");
+
+        System.out.println("e:");
+        System.out.println(MonthlyPower.computeSpotPrice(power_usage_month, power_prices_month));
+        System.out.println();
     }
 }
