@@ -42,8 +42,11 @@ public class Customer {
         this.agreement = NewAgreement;
     }
 
-
-
-    // TODO - toString method
+    public String toString() {
+        return "Customer number: " + getCustomer_id()
+                + ", Name: " + getName()
+                + ", Email: " + getEmail()
+                + ", Agreement: " + getAgreement();
+    }
 
 }
