@@ -14,7 +14,35 @@ public class Customer {
         this.agreement = agreement;
     }
 
-    // TODO - getter/setter methods for all objectvariables
+    public String getName() {
+        return name;
+    }
+    public void setName(String NewName) {
+        this.name = NewName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String NewEmail) {
+        this.email = NewEmail;
+    }
+
+    public int getCustomer_id() {
+        return customer_id;
+    }
+    public void setCustomer_id(int NewCustomer_id) {
+        this.customer_id = NewCustomer_id;
+    }
+
+    public PowerAgreementType getAgreement() {
+        return agreement;
+    }
+    public void setAgreement(PowerAgreementType NewAgreement) {
+        this.agreement = NewAgreement;
+    }
+
+
 
     // TODO - toString method
 
