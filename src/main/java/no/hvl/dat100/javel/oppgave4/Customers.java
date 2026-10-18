@@ -12,7 +12,11 @@ public class Customers {
 
     public int countNonNull() {
         int count = 0;
-        
+        for(int i = 0; i < customers.length; i++) {
+            if (customers[i] != null) {
+                count += 1;
+            }
+        }
         return count;
     }
 
