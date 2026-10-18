@@ -3,24 +3,16 @@ package no.hvl.dat100.javel.oppgave4;
 import no.hvl.dat100.javel.oppgave3.Customer;
 
 public class Customers {
-
+    
     private Customer[] customers;
-
-    // a) Complete constructor
+    
     public Customers(int size) {
-
-        // TODO
-
+        this.customers = new Customer[size];
     }
 
-    // b) count number of non-null references
     public int countNonNull() {
-
-
         int count = 0;
-
-        // TODO
-
+        
         return count;
     }
 
