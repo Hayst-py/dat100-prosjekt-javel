@@ -16,20 +16,36 @@ public class Invoice {
 
 
     public Invoice(Customer c, String month, double[][] usage, double[][] power_prices) {
-
-        // TODO - konstruktør
+        this.c = c;
+        this.month = month;
+        this.usage = usage;
+        this.prices = power_prices;
+        this.amount = 0;
 
     }
 
     public void computeAmount() {
 
-        // TODO
+        switch (c.getAgreement()) {
+            case SPOTPRICE:
+                amount = MonthlyPower.computeSpotPrice(usage, prices);
+                break;
+            case POWERSUPPORT:
+                amount = MonthlyPower.computeSpotPrice(usage, prices) - MonthlyPower.computePowerSupport(usage, prices);
+                break;
+            case NORGESPRICE:
+                amount = MonthlyPower.computeNorgesPrice(usage);
+                break;
+        }
 
     }
 
     public void printInvoice() {
 
-        // TODO
+        System.out.println(c);
+        System.out.println("Month: " + month);
+        System.out.println("Usage: " + MonthlyPower.computePowerUsage(usage) + " kWh");
+        System.out.println("Amount: " + amount + " NOK");
 
     }
 }
