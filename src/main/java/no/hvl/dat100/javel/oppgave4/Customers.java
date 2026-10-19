@@ -28,6 +28,7 @@ public class Customers {
             if (customers[i] != null && customers[i].getCustomer_id() == customer_id) {
                 c = customers[i];
                 funnet = true;
+                break;
             }
         }
         return c;
@@ -40,6 +41,7 @@ public class Customers {
             if (customers[i] == null) {
                 customers[i] = c;
                 inserted = true;
+                break;
             }
         }
         return inserted;
@@ -54,6 +56,7 @@ public class Customers {
                 c = customers[i];
                 customers[i] = null;
                 deleted = true;
+                break;
             }
         }
         return c;
