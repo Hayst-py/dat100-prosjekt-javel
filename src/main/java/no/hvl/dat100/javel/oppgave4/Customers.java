@@ -36,9 +36,11 @@ public class Customers {
 
     public boolean addCustomer(Customer c) {
         boolean inserted = false;
-        for (customers[i] == null) {
-            customers[i] = c;
-            inserted = true;
+        for (int i = 0; i < customers.length; i++) {
+            if (customers[i] == null) {
+                customers[i] = c;
+                inserted = true;
+            }
         }
         return inserted;
     }
