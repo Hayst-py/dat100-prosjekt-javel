@@ -12,7 +12,7 @@ public class Customers {
 
     public int countNonNull() {
         int count = 0;
-        for(int i = 0; i < customers.length; i++) {
+        for (int i = 0; i < customers.length; i++) {
             if (customers[i] != null) {
                 count += 1;
             }
@@ -20,45 +20,57 @@ public class Customers {
         return count;
     }
 
-    // c) return reference to customer with given id (if exists)
     public Customer getCustomer(int customer_id) {
-
         boolean funnet = false;
         Customer c = null;
 
-        // TODO
-
+        for (int i = 0; i < customers.length; i++) {
+            if (customers[i] != null && customers[i].getCustomer_id() == customer_id) {
+                c = customers[i];
+                funnet = true;
+            }
+        }
         return c;
     }
 
-    // d) add a customer to the reference table
+
     public boolean addCustomer(Customer c) {
-
         boolean inserted = false;
-
-        // TODO
-
+        for (customers[i] == null) {
+            customers[i] = c;
+            inserted = true;
+        }
         return inserted;
     }
 
-    // e) remove customer with given id from reference table
+    
     public Customer removeCustomer(int customer_id) {
-
         boolean deleted = false;
         Customer c = null;
-
-        // TODO
-
+        for (int i = 0; i < customers.length; i++){
+            if (customers[i] != null && customers[i].getCustomer_id() == customer_id) {
+                c = customers[i];
+                customers[i] = null;
+                deleted = true;
+            }
+        }
         return c;
     }
 
-    // f) return reference table with all customers
     public Customer[] getCustomers() {
-
         Customer[] customers = null;
 
-        // TODO
+        int count = countNonNull();
+        customers = new Customer[count];
 
+        int index = 0;
+
+        for (int i = 0; i < this.customers.length; i++) {
+            if (this.customers[i] != null){
+                customers[index] = this.customers[i];
+                index++;
+            }
+        }
         return customers;
     }
 }
